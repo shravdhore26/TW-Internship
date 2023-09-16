@@ -1,0 +1,679 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset CSS */
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #FFD700;
+    --secondary: #840032;
+    --tertiary: white;
+    --shadow: 7px 7px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar */
+nav {
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100vw;
+    display: flex;
+    justify-content: end;
+    padding: 10px 75px;
+    position: fixed;
+    font-size: 18px;
+}
+
+nav a {
+    color: var(--tertiary);
+    text-decoration: none;
+}
+
+nav div {
+    margin: 0 25px;
+}
+
+nav div:hover {
+    border-bottom: 2px solid var(--tertiary);
+}
+
+/* Page 1 Content */
+#page1 {
+    background-color: var(--primary);
+}
+
+.upperdiv {
+    color: var(--tertiary);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+}
+
+.headtxt {
+    /* margin: 5px; */
+    color: var(--secondary);
+    font-size: 38px;
+    /* font-weight: bolder; */
+}
+
+.lowerdiv {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    text-decoration: none;
+    color: var(--secondary);
+    display: flex;
+    border: 2px solid var(--secondary);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Page2 */
+#page2 {
+    color: var(--primary);
+    background-color: var(--secondary);
+    padding: 0 60px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Left Box - About */
+.abtcontainer {
+    /* display: flex; */
+    /* margin: 70px; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.abtcontainer a {
+    text-decoration: none;
+    color: var(--primary);
+    margin: 30px;
+    font-weight: 700;
+    border-bottom: 2px solid var(--secondary);
+    padding: 5px;
+}
+
+.abtcontainer a:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+.facelogo {
+    height: 180px;
+    width: 180px;
+    margin: 20px;
+}
+
+.abtinfo {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--tertiary);
+}
+
+/* Right Box - Progress */
+.progresscontainer {
+    margin: 20px;
+    width: 500px;
+}
+
+.progressbox {
+    margin: 30px auto;
+    width: 500px;
+    font-size: 18px;
+}
+
+.progoutside {
+    padding: 3px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.progline {
+    height: 15px;
+    border-radius: 30px;
+    background-color: var(--primary);
+}
+
+/* HTML */
+.progline1 {
+    width: 90%;
+    animation: progressAnimation1 4s;
+}
+
+@keyframes progressAnimation1 {
+    0% {
+        width: 5%;
+        background-color: var(--primary);
+    }
+
+    100% {
+        width: 90%;
+        background-color: var(--primary);
+    }
+}
+
+/* CSS */
+.progline2 {
+    width: 85%;
+    animation: progressAnimation2 4s;
+}
+
+@keyframes progressAnimation2 {
+    0% {
+        width: 5%;
+        background-color: var(--primary);
+    }
+
+    100% {
+        width: 85%;
+        background-color: var(--primary);
+    }
+}
+
+/* JavaScript */
+.progline3 {
+    width: 75%;
+    animation: progressAnimation3 4s;
+}
+
+@keyframes progressAnimation3 {
+    0% {
+        width: 5%;
+        background-color: var(--primary);
+    }
+
+    100% {
+        width: 75%;
+        background-color: var(--primary);
+    }
+}
+
+
+/* Python */
+.progline4 {
+    width: 70%;
+    animation: progressAnimation4 4s;
+}
+
+@keyframes progressAnimation4 {
+    0% {
+        width: 5%;
+        background-color: var(--primary);
+    }
+
+    100% {
+        width: 70%;
+        background-color: var(--primary);
+    }
+}
+
+
+/* MySQL */
+.progline5 {
+    width: 75%;
+    animation: progressAnimation5 4s;
+}
+
+@keyframes progressAnimation5 {
+    0% {
+        width: 5%;
+        background-color: var(--primary);
+    }
+
+    100% {
+        width: 75%;
+        background-color: var(--primary);
+    }
+}
+
+/* Page 3 - Portfolio */
+#page3 {
+    display: flex;
+    font-size: 20px;
+    font-weight: 900;
+    height: 100vh;
+    background-color: var(--primary);
+    color: var(--secondary);
+    align-items: center;
+    justify-content: center;
+}
+
+#page3 h1 {
+    text-align: center;
+}
+
+.portcontainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.proj {
+    display: flex;
+    align-items: center;
+}
+
+.projcircle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    margin: 10px 50px;
+    box-shadow: var(--shadow)
+}
+
+.projbtn {
+    display: inline-block;
+    margin: 5px;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.projbtn:hover {
+    box-shadow: var(--shadow)
+}
+
+
+/* Page4 */
+#page4 {
+    font-size: 17px;
+    display: flex;
+    height: 100vh;
+    background-color: var(--secondary);
+    color: var(--primary);
+    align-items: center;
+    justify-content: center;
+}
+
+.contactcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mailinfo {
+    color: var(--tertiary);
+}
+
+#page4 h1,
+#page4 div {
+    margin: 10px;
+}
+
+.contacts {
+    display: flex;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: var(--primary);
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.contacts a:hover {
+    box-shadow: var(--shadow)
+}
+
+
+
+
+
+
+
+/*==================================== Media Queries =====================================*/
+@media screen and (max-width: 1200px) and (min-width:992px) {
+
+    /* Page2 */
+    #page2 {
+        padding: 0 40px;
+    }
+
+    /* Left Box - About */
+    .abtcontainer {
+        margin: 40px;
+    }
+
+    /* Right Box - Progress */
+    .progresscontainer {
+        margin: 10px;
+        width: 400px;
+    }
+
+    .progressbox {
+        margin: 20px auto;
+        width: 400px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 992px) and (min-width:768px) {
+
+    /* Page2 */
+    #page2 {
+        padding: 0 15px;
+    }
+
+    /* Left Box - About */
+    .abtcontainer {
+        margin: 0 20px;
+    }
+
+    .abtcontainer a {
+        margin: 20px;
+    }
+
+    .abtinfo {
+        font-size: 22px;
+    }
+
+    /* Right Box - Progress */
+    .progresscontainer {
+        margin: 15px;
+        width: 300px;
+    }
+
+    .progressbox {
+        margin: 25px auto;
+        width: 300px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) and (min-width:600px) {
+
+    /* Navbar */
+    nav {
+        padding: 10px 5px;
+    }
+
+    /* Page2 */
+    #page2 {
+        padding: 25px 15px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Left Box - About */
+    .abtcontainer {
+        margin: 0 20px;
+    }
+
+    .abtcontainer a {
+        margin: 10px;
+    }
+
+    .abtinfo {
+        font-size: 20px;
+    }
+
+    /* Right Box - Progress */
+    .progresscontainer {
+        margin: 15px;
+        width: 400px;
+    }
+
+    .progressbox {
+        margin: 10px auto;
+        width: 400px;
+        font-size: 15px;
+    }
+
+    /* HTML */
+    .progline {
+        height: 10px;
+    }
+
+    #page3 h1 {
+        font-size: 30px;
+    }
+
+    .proj {
+        font-size: 17px;
+    }
+
+    .projcircle {
+        height: 200px;
+        width: 200px;
+        margin: 10px 30px;
+    }
+
+    .projbtn {
+        font-size: 12px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 600px) and (min-width: 370px) {
+
+    /* Navbar */
+    nav {
+        font-size: 15px;
+        padding: 5px 5px;
+    }
+
+    nav div {
+        margin: 15px;
+    }
+
+    .upperdiv {
+        font-size: 20px;
+    }
+
+    .headtxt {
+        font-size: 32px;
+    }
+
+    /* Page2 */
+    #page2 {
+        padding: 25px 15px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Left Box - About */
+    .abtcontainer {
+        margin: 0 20px;
+    }
+
+    .abtcontainer a {
+        margin: 10px;
+    }
+
+    .abtinfo {
+        font-size: 17px;
+    }
+
+    /* Right Box - Progress */
+    .progresscontainer {
+        margin: 15px;
+        width: 280px;
+    }
+
+    .progressbox {
+        margin: 10px auto;
+        width: 280px;
+        font-size: 15px;
+    }
+
+    /* HTML */
+    .progline {
+        height: 10px;
+    }
+
+    /* Page 3 - Portfolio */
+    #page3 {
+        font-size: 15px;
+    }
+
+    #page3 h1 {
+        font-size: 25px;
+    }
+
+    .proj {
+        margin-bottom: 10px;
+        flex-direction: column;
+    }
+
+    .projcircle {
+        height: 150px;
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .projinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projbtn {
+        margin-top: 5px;
+        font-size: 10px;
+    }
+
+    /* Page4 */
+    #page4 {
+        font-size: 10px;
+    }
+
+    .contacts {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media screen and (max-width: 370px) and (min-width:250px) {
+    nav {
+        justify-content: center;
+    }
+
+    /* Navbar */
+    nav div {
+        font-size: 15px;
+        margin: 10px;
+    }
+
+    .upperdiv {
+        font-size: 12px;
+    }
+
+    .headtxt {
+        font-size: 22px;
+    }
+
+    /* Page2 */
+    #page2 {
+        padding: 0 10px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Left Box - About */
+    .abtcontainer {
+        margin: 0 15px;
+    }
+
+    .abtcontainer a {
+        margin: 10px;
+    }
+
+    .abtinfo {
+        font-size: 15px;
+    }
+
+    /* Right Box - Progress */
+    .progresscontainer {
+        margin: 10px;
+        width: 250px;
+    }
+
+    .progressbox {
+        margin: 10px auto;
+        width: 250px;
+        font-size: 15px;
+    }
+
+    /* HTML */
+    .progline {
+        height: 10px;
+    }
+
+    /* Page 3 - Portfolio */
+    #page3 {
+        font-size: 15px;
+    }
+
+    #page3 h1 {
+        font-size: 25px;
+    }
+
+    .proj {
+        margin-bottom: 10px;
+        flex-direction: column;
+        font-size: 10px;
+    }
+
+    .projcircle {
+        height: 150px;
+        width: 150px;
+        margin: 10px 0;
+    }
+
+    .projinfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projbtn {
+        font-size: 8px;
+    }
+
+    /* Page4 */
+    #page4 {
+        font-size: 12px;
+    }
+
+    .contacts {
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
